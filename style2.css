@@ -1,0 +1,140 @@
+/* Загальні стилі */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #202020;
+    color: white;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f11515; 
+}
+
+header .search-bar {
+    display: flex;
+}
+
+header .search-bar input {
+    padding: 5px;
+    width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+
+header .search-bar button {
+    padding: 6px 10px;
+    margin-left: 5px;
+    cursor: pointer;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    border-radius: 2px;
+}
+
+header .user-icons .icon {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+/* Контейнер */
+.container {
+    display: flex;
+}
+
+/* Бічна панель */
+aside {
+    width: 220px;
+    background-color: #f2f2f2;
+    padding: 20px 10px;
+    border-right: 1px solid #ddd;
+}
+
+aside nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+aside nav ul li {
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+aside nav ul li:hover {
+    background-color: #ddd;
+}
+
+aside nav ul li::before {
+    content: "•";
+    margin-right: 10px;
+    font-size: 16px;
+    color: #ff0000;
+}
+
+/* Головний контент */
+main {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #f9f9f9;
+    justify-content: space-evenly;
+}
+
+main .video-card {
+    width: 300px;
+    margin: 10px;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-decoration: none;
+    color: inherit;
+}
+
+main .video-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+main .video-card img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+main .video-card h3 {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+main .video-card p {
+    color: #606060;
+}
+
+/* Футер */
+footer {
+    padding: 10px;
+    text-align: center;
+    background-color: #202020;
+    color: white;
+}
+
+/* Додаткові стилі */
+footer p {
+    margin: 0;
+}
+
+

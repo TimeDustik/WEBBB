@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Planner</title>
+    <link rel="stylesheet" href="LB4.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <h1>WEEKLY PLAN</h1>
+            <div class="header-info">
+                <div>
+                    <label for="week-of">Week of:</label>
+                    <input type="text" id="week-of">
+                </div>
+                <div>
+                    <label for="habit">Healthy Habit:</label>
+                    <input type="text" id="habit">
+                </div>
+                <div>
+                    <input type="checkbox" id="rocked-it">
+                    <label for="rocked-it">Rocked It</label>
+                    <input type="checkbox" id="improvement">
+                    <label for="improvement">Room for Improvement</label>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content -->
+        <div class="content">
+            <!-- Left Sidebar for Goals and Tasks -->
+            <aside>
+                <h2>TOP 3 GOALS</h2>
+                <ul>
+                    <li><input type="checkbox"> Goal 1</li>
+                    <li><input type="checkbox"> Goal 2</li>
+                    <li><input type="checkbox"> Goal 3</li>
+                </ul>
+                <h2>EVERYTHING ELSE</h2>
+                <ul>
+                    <li><input type="checkbox"> Task 1</li>
+                    <li><input type="checkbox"> Task 2</li>
+                    <li><input type="checkbox"> Task 3</li>
+                    <li><input type="checkbox"> Task 4</li>
+                </ul>
+                <h2>NEXT WEEK</h2>
+                <ul>
+                    <li><input type="checkbox"> Plan 1</li>
+                </ul>
+            </aside>
+            <!-- Grid for Days of the Week -->
+            <section class="planner-grid">
+                <div class="day">
+                    <h3>Monday</h3>
+                    <input type="checkbox">
+                    <textarea placeholder="Write notes..."></textarea>
+                </div>
+                <div class="day">
+                    <h3>Tuesday</h3>
+                    <input type="checkbox">
+                    <textarea placeholder="Write notes..."></textarea>
+                </div>
+                <div class="day">
+                    <h3>Wednesday</h3>
+                    <input type="checkbox">
+                    <textarea placeholder="Write notes..."></textarea>
+                </div>
+                <div class="day">
+                    <h3>Thursday</h3>
+                    <input type="checkbox">
+                    <textarea placeholder="Write notes..."></textarea>
+                </div>
+                <div class="day">
+                    <h3>Friday</h3>
+                    <input type="checkbox">
+                    <textarea placeholder="Write notes..."></textarea>
+                </div>
+                <div class="day">
+                    <h3>Saturday</h3>
+                    <input type="checkbox">
+                    <textarea placeholder="Write notes..."></textarea>
+                </div>
+                <div class="day">
+                    <h3>Sunday</h3>
+                    <input type="checkbox">
+                    <textarea placeholder="Write notes..."></textarea>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

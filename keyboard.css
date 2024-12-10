@@ -1,0 +1,186 @@
+body * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+textarea#output {
+    width: calc(100% - 40px);
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 18px;
+    border: 2px solid #747474;
+    border-radius: 5px;
+    resize: none;
+    outline: none;
+    background-color: #3a3a3a;
+    display: block;
+    height: 100px;
+}
+
+.keyboard-base {
+    max-width: 1400px;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(14, 14, 14);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(38, 30px);
+    grid-template-rows: repeat(6, 60px);
+    grid-gap: 5px;
+}
+
+.key {
+    background-color: #747474;
+    border: 2px solid #747474;
+    border-radius: 5px;
+    color: #ffffff;
+    grid-column: span 2;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 17px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    user-select: none;
+}
+
+.key:hover {
+    background-color: #dcdcdc;
+}
+
+.key:active {
+    background-color: #bbbbbb;
+    box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.key.function {
+    background-color: #e6e6fa; /* Лавандовий */
+    color: #ffffff;              /* Темно-сірий текст */
+}
+
+
+.key.special {
+    background-color: #f08080; /* Світлий червоний */
+    color: #fff;               /* Білий текст */
+}
+
+.key.nav {
+    background-color: #add8e6;
+    color: #ffffff;
+}
+
+.key.space {
+    background-color: #747474;
+    color: #ffffff;
+    grid-column: span 12;
+}
+
+.key.alpha {
+    background-color: #f5f5dc;
+    color: #ffffff;
+}
+
+.key.function:active,
+.key.special:active,
+.key.nav:active {
+    background-color: #ff6347;
+}
+
+.key.space:active {
+    background-color: #a9a9a9;
+}
+
+.delete, .backspace, .capslock, .enter, .zero {
+    grid-column: span 4;
+}
+
+.tab {
+    grid-column: span 3;
+}
+
+.leftshift, .rightshift {
+    grid-column: span 5;
+}
+
+.vert_long {
+    grid-row: span 2;
+}
+
+.arrow-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-column: span 2;
+    grid-row-gap: 5px;
+}
+
+.arrow {
+    height: 27px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    background-color: #747474;
+    border: 2px solid #747474;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.arrow:hover {
+    background-color: #dcdcdc;
+}
+
+.arrow:active {
+    background-color: #bbbbbb;
+    box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.function-row {
+    grid-column: span 30;
+    display: flex;
+    justify-content: space-between;
+}
+
+.numpad {
+    display: grid;
+    grid-template-columns: repeat(4, 30px);
+    grid-gap: 5px;
+    margin-left: 20px; /* Відступ від основної клавіатури */
+    grid-row: span 6; /* Вирівнювання висоти */
+}
+
+.numpad .key {
+    background-color: #f5f5f5;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 17px;
+    font-size: 20px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    user-select: none;
+}
+
+.numpad .key:hover {
+    background-color: #e6e6e6;
+}
+
+.numpad .key:active {
+    background-color: #cccccc;
+    box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.numpad .key.numlock {
+    background-color: #add8e6;
+}
+
+.numpad .key.nav {
+    background-color: #ffebcd;
+}

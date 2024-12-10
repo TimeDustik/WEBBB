@@ -1,0 +1,222 @@
+/* Базові налаштування */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+/* Стилі для хедера */
+header {
+    background-color: #ff0f0f;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(248, 35, 35, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Стилі для навігації */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #990000;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 15px 20px;
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #7b68ee;
+    color: #f0f8ff;
+    border-radius: 5px;
+}
+
+/* Стилі для секцій */
+section {
+    margin: 40px auto;
+    padding: 20px;
+    width: 80%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #0eda52;
+    text-align: center;
+}
+
+section p, section ul {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+section#about img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Стилі для списків робіт */
+ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+ul li {
+    margin: 15px 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #483d8b;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: color 0.3s, transform 0.3s;
+}
+
+ul li a:hover {
+    color: #6a5acd;
+    transform: scale(1.05);
+}
+
+/* Стилі для футера */
+footer {
+    background-color: #483d8b;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #ffdead;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+/* Адаптивність для мобільних пристроїв */
+@media (max-width: 768px) {
+    section {
+        width: 90%;
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    ul li a {
+        font-size: 1rem;
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #999;
+    padding: 10px;
+    text-align: center;
+    vertical-align: top;
+}
+th {
+    background-color: #f2f2f2;
+}
+.day-header {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+.subject {
+    background-color: #e0f7e0; /* для пари */
+}
+.subject-blue {
+    background-color: #d6eaff; /* блакитні */
+}
+.subject-green {
+    background-color: #e0ffec; /* світло-зелені */
+}
+.subject-yellow {
+    background-color: #fff8e0; /* жовті */
+}
+.subject-purple {
+    background-color: #f8e0ff; /* світло-фіолетові */
+}
+.subject-dark-blue {
+    background-color: #adcbe3; /* темно-сині */
+    color: white;
+}
+.day-number {
+    font-weight: bold;
+    color: gray;
+}
+
+.registration-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.downPart {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+select, button {
+    width: 48%;
+}
+
